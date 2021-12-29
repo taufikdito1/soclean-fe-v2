@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Add Order </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bulma CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">So CLEAN</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="admin.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Daftar Order</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="admin.html">Daftar Order</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Daftar Member</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Daftar Member</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      &nbsp;&nbsp;
+      <span class="text">ADMIN</span>
+      <span>
+        &nbsp;&nbsp;
+        <button id="input-btn" class="button is-small is-warning modal-button" onClick="window.location.href='tambahorder.html';">
+          Tambah Pesanan
+        </button>
+      </span>
+    </div>
+    
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="box">
+          <section>
+            <label class="label">Nama</label>
+            <div class="columns">
+                <div class="column">
+                    <input id="kolom-nama" class="input" type="text">
+                </div>
+                <div class="column">
+                    <div class="select">
+                        <select id="kolom-member">
+                            <option value="Non Member">Non Member</option>
+                            <option value="Member">Member</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+          
+            <label class="label">Layanan</label>
+            <div class="select">
+                <select id="kolom-layanan">
+                    <option value="Cuci Kering">Cuci Kering</option>
+                    <option value="Cuci Kering + Setrika">Cuci Kering + Setrika</option>
+                    <option value="Setrika Saja">Setrika Saja</option>
+                </select>
+            </div>
+            <div class="select ml-2">
+                <select name="" id="kolom-paket">
+                    <option value="Reguler">Reguler - 2hari</option>
+                    <option value="Espress">Espress - 8jam</option>
+                </select>
+            </div>
+            <button class="button is-light" onclick="showHarga()" disabled>Lihat harga</button>
+          
+            <label class="label">Berat</label>
+            <input id="kolom-berat" class="input" type="text" value="1">
+          
+            <div class="columns">
+                <div class="column">
+                    <label for="" class="label">Tgl Masuk</label>
+                    <input id="kolom-masuk" type="date" class="date">
+                </div>
+          
+                <div class="column">
+                    <label for="" class="label">Estimasi Selesai</label>
+                    <input id="kolom-estimasi" type="date" class="date">
+                </div>
+            </div>
+          
+            <button class="button is-primary" onclick="tambahData()">Submit</button>
+          
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

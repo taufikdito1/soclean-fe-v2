@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Admin </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bulma CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">So CLEAN</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Daftar Order</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Daftar Order</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Daftar Member</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Daftar Member</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      &nbsp;&nbsp;
+      <span class="text">ADMIN</span>
+      <span>
+        &nbsp;&nbsp;
+        <button id="input-btn" class="button is-small is-warning modal-button" onClick="window.location.href='tambahorder.html';">
+          Tambah Pesanan
+        </button>
+      </span>
+    </div>
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Member</th>
+              <th>Kode Order</th>
+              <th>Layanan</th>
+              <th>Paket</th>
+              <th>Berat</th>
+              <th>Tgl Masuk</th>
+              <th>Tgl Estimasi</th>
+              <th>Status</th>
+              <th>Harga</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="tampil-data">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
