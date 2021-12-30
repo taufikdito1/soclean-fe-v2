@@ -19,10 +19,11 @@ const tampilData = document.querySelector('.tampil-data');
 const url = 'http://soclean.vincentmoel.com/public/api/transaction';
 
 let output = '';
+let statusNow = ''
+let sisaStatus = ''
 
 const renderData = (posts) => {
-  let statusNow = ''
-  let sisaStatus = ''
+  
   
   let tampil = posts.data;
   tampil.forEach(data => {
@@ -52,7 +53,7 @@ const renderData = (posts) => {
         </td>
         <td>${data.harga}</td>
         <td>
-          <button class="button is-danger" onClick="editData()">Edit</button>
+          <button class="button is-danger" onClick="editData(${data.id})">Edit</button>
         </td>
       </tr>
     `;
@@ -128,3 +129,17 @@ function tambahData() {
 // ===============================================================================
 
 // Script untuk Edit Data
+function editData(kode){
+  window.location.reload(true);
+  fetch(`${url}/${kode}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      status: sisaStatus,
+      _method: 'PUT'
+    })
+  })
+  console.log(sisaStatus);
+}
