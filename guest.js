@@ -8,12 +8,12 @@ const kolomEstimasi = document.querySelector('#kolom-estimasi')
 const kolomStatus = document.querySelector('#kolom-status')
 const kolomCek = document.querySelector('#kolom-cek')
 
-let urlunik = ''
+let urlunik = localStorage.getItem("kodepesan");
 let url = `http://soclean.vincentmoel.com/public/api/transaction/${urlunik}`;
 
 function cekOrder() {
-  // window.location.href="guest.html";
-  urlunik += kolomCek.value
+  localStorage.setItem("kodepesan", kolomCek.value);
+  window.location.href="guest.html";
 }
 
 
