@@ -7,11 +7,224 @@
   <title>Home</title>
   <!-- Bulma CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <input id="kolom-cek" class="input" type="text" placeholder="Text input">
-  <button class="button is-primary" onclick="cekOrder()">Primary</button>
+<body>
+	<div id="app">
+		<section class="hero is-fullheight is-light" >
+			<div class="hero-head">
+				<nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
+					<div class="container">
+						<div class="navbar-brand">
+							<a class="navbar-item" href="rent.html">
+								<img src="image/logo.png" alt="Bulma Rent" width="130" height="60">
+							</a>
+							<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTopMain">
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+							</a>
+						</div>
+						<div class="navbar-menu" id="navbarTopMain">
+							<div class="navbar-end">
+								<a href="index.html"
+								class="navbar-item has-text-weight-semibold"> 
+								<span>Home</span>
+							  </a>
+							<div class="navbar-item">
+								<a href="https://aldi.github.io/awesome-bulma-templates/templates/login/login.html" class="button is-primary">
+									Sign in
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="hero-body  p-b-30 ">
+			<div class="container">
+				<!-- <h1 class="title">
+					<span class="is-size-2 has-text-centered is-block">Selamat Datang</span>
+				</h1> -->
+        <div class="has-text-centered">
+					<img src="image/background1.png" alt="Background gambar">
+				</div>
+        <h2 class="subtitle">
+					<span class="has-text-centered is-block m-t-30">
+						Cek pesanan
+					</span>
+				</h2>
+				<div class="columns is-centered">
+					<div class="column is-7">
+						<div class="search-form">
+							<form>
+								<div class="field has-addons has-shadow-field">
+									<div class="control has-icons-left is-expanded">
+                    <input id="kolom-cek" class="input" type="text" placeholder="Masukan kode pesanan"> 
+										<span class="icon is-medium is-left">
+											<svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+												<path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+												</path>
+											</svg>
+										</span>
+									</div> 
+									<div class="control">
+                    <button class="button is-primary" onclick="cekOrder()">Cek</button>
 
-  <script src="guest.js"></script>
+                    <script src="guest.js"></script>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hero is-medium has-text-centered" >
+		<div class="hero-body ">
+			<div class="container">
+				<h1 class="title">
+					Layanan Populer
+				</h1>
+				<br>
+				<div class="columns is-centered">
+					<div class="column is-10">
+						<div class="columns is-multiline">
+							<div class="column is-one-third">
+								<div class="card rb-card">
+									<div class="card-image">
+										<div class="card-image">
+											<figure class="image is-16by9">
+												<img src="image/cuci_lipat.png" alt="cuci dan lipat">
+											</figure>
+										</div>
+									</div>
+									<div class="card-content">
+										<h3 class="title is-size-6 ellipsis is-ellipsis-1">
+											<a class="has-text-dark">
+												Cuci & Lipat
+											</a>
+										</h3>
+										<h4 class="subtitle is-size-7">
+											Layanan ini hanya mengerjakan mencuci pakaian, mengeringkan dan melipat dengan pewangi.
+										</h4>
+									</div>
+								</div>
+							</div>
+							<div class="column is-one-third">
+								<div class="card rb-card">
+									<div class="card-image">
+										<div class="card-image">
+											<figure class="image is-16by9">
+												<img src="image/express.png" alt="Laundry express">
+											</figure>
+										</div>
+									</div>
+									<div class="card-content">
+										<h3 class="title is-size-6 ellipsis is-ellipsis-1">
+											<a class="has-text-dark" href="s/rental-rates-simi-valley.html">
+												Express
+											</a>
+										</h3>
+										<h4 class="subtitle is-size-7">
+											Layanan Express adalah layanan laundry yang waktu pengerjaannya dalam kurun waktu 1 hari ataupun dalam hitungan jam.
+										</h4>
+									</div>
+								</div>
+							</div>
+							<div class="column is-one-third">
+								<div class="card rb-card">
+									<div class="card-image">
+										<div class="card-image">
+											<figure class="image is-16by9">
+												<img src="image/cuci_komplit.png" alt="cuci_komplit">
+											</figure>
+										</div>
+									</div>
+									<div class="card-content">
+										<h3 class="title is-size-6 ellipsis is-ellipsis-1">
+											<a class="has-text-dark" href="s/rental-rates-detroit.html">
+												Cuci Komplit
+											</a>
+										</h3>
+										<h4 class="subtitle is-size-7">
+											Layanan cuci basah dan menyetrika dengan menambahkan parfum (reguler/ekspres & kiloan/satuan)
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container"><hr></div>
+	<section class="hero">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column is-7">
+						<div class="columns">
+							<div class="column">
+								<h1 class="title m-t-60">Duduk & Santai</h1>
+								<h2 class="subtitle">Gunakan waktu anda dengan santai,  biarkan kami bersihkan pakaian Anda karena itu memang tugas kami.</h2>
+							</div>
+							<div class="column has-text-centered">
+								<img class="m-t-50" src="image/duduk_santai.png" alt="duduk_santai">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</section>
+	<section class="hero is-medium is-light" >
+		<div class="hero-body p-b-30">
+			<div class="container">
+				<div class="has-text-centered">
+					<h2 class="subtitle">
+						Contact Us
+					</h2>
+					<div class="has-text-centered m-t-60">
+						<img class="m-t-50" src="image/logo.png" alt="Find rentals">
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- Footer -->
+	<footer class="hero is-small is-light">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<a href="https://bulma.io">
+					<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="171" height="32">
+				</a>
+				<div class="columns m-t-10">
+					<div class="column">
+						<nav class="has-text-grey-light">
+							<a href="#" class="has-text-primary">About us</a> &bullet;
+							<a href="#" class="has-text-primary">Our story</a> &bullet;
+							<a href="#" class="has-text-primary">Post a listing</a> &bullet;
+							<a href="#" class="has-text-primary">Contact us</a> &bullet;
+						</nav>
+					</div>
+				</div>
+				<div class="b-t m-t-30 p-t-30 has-text-grey-light is-size-7">
+					Proyek RPLL 2021 &copy; Kelompok 4 <br>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
