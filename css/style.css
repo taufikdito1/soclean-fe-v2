@@ -178,3 +178,12 @@ font-size:13px;
 color:#aaa;
 margin-bottom:0;
 }
+
+.centerall {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
